@@ -19,6 +19,13 @@ function diff(item) {
 function mult(item) {
   const totalNum = item.reduce((acc, cur) => {
     return acc * cur;
-  }, 0);
+  }, 1);
+  console.log(totalNum);
+}
+
+function division(item) {
+  const totalNum = item.reduce((acc, cur) => {
+    return acc / cur;
+  });
   console.log(totalNum);
 }
