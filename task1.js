@@ -8,3 +8,10 @@ function isEven() {
   });
   console.log(evens);
 }
+
+function isOdd() {
+  const odds = arr.filter((e) => {
+    return e % 2 === 1;
+  });
+  console.log(odds);
+}
