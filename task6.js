@@ -7,4 +7,4 @@ function checkInclude(where, what) {
   if (where.includes(what)) return where.replace(what, '');
 }
 
-console.log(checkInclude('This is some text', 'is'));
+console.log(checkInclude(str1, str2));
