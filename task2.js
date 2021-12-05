@@ -8,3 +8,10 @@ function sum(item) {
   }, 0);
   console.log(totalNum);
 }
+
+function diff(item) {
+  const totalNum = item.reduce((acc, cur) => {
+    return acc - cur;
+  }, 0);
+  console.log(totalNum);
+}
