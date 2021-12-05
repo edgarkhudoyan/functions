@@ -15,4 +15,8 @@ function badNumber(num) {
   else if (num[0] !== '+') console.log('Bad Number');
 }
 
-badNumber(number);
+function goodNumber(num) {
+  if (num.length === 10) console.log('Good number');
+}
+
+goodNumber(number);
