@@ -12,6 +12,6 @@ function sum(item) {
 function diff(item) {
   const totalNum = item.reduce((acc, cur) => {
     return acc - cur;
-  }, 0);
+  });
   console.log(totalNum);
 }
