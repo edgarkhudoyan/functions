@@ -15,3 +15,10 @@ function diff(item) {
   });
   console.log(totalNum);
 }
+
+function mult(item) {
+  const totalNum = item.reduce((acc, cur) => {
+    return acc * cur;
+  }, 0);
+  console.log(totalNum);
+}
