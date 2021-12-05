@@ -15,3 +15,6 @@ function isOdd() {
   });
   console.log(odds);
 }
+
+isEven();
+isOdd();
