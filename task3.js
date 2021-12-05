@@ -9,7 +9,7 @@
 // If the phone number contains + symbol more than one, consider it as a bad number.
 // If the phone number contains + symbol not as the first character, consider it as a bad number.
 
-let number = '+14234567811';
+let number = '+1423456711';
 
 function badNumber(num) {
   if (num.length > 10 || num.length < 10) console.log('Bad Number');
@@ -24,4 +24,3 @@ function trimNumber(num) {
   if (num.length === 11 && num[0] === '+') num = num.substring(1);
   console.log(num);
 }
-trimNumber(number);
