@@ -29,3 +29,8 @@ function division(item) {
   });
   console.log(totalNum);
 }
+
+sum(arr);
+diff(arr);
+mult(arr);
+division(arr);
