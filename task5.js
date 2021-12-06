@@ -2,19 +2,24 @@
 let str = 'FwrtY45KHL120mn10P';
 
 function findSum(str) {
-  let temp = 0;
-  let sum = 0;
+  let arr = [];
+  let temp = '';
+  let result = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    let number = str[i];
+  arr = str.split('');
 
-    if (!isNaN(String(number) * 1)) temp += number;
-    else {
-      sum += parseInt(temp);
-      temp = '0';
+  for (let i = 0; i < arr.length; i++) {
+    if (!isNaN(arr[i]) || arr[i] === '-') {
+      temp += arr[i];
+    } else {
+      if (!isNaN(temp)) {
+        result += +temp;
+      }
+      temp = '';
     }
   }
-  return sum + parseInt(temp);
+
+  return result;
 }
 
 console.log(findSum(str));
